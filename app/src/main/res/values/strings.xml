@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gamez</string>
+    <string name="title_activity_guess_the_country">GuessTheCountry</string>
+    <string name="title_activity_guess_hints">GuessHints</string>
+    <string name="title_activity_guess_the_flag">GuessTheFlag</string>
+    <string name="title_activity_advanced">Advanced</string>
+    <string name="title_activity_introduction">Introduction</string>
+    <string name="title_activity_loading">loadingActivity</string>
+</resources>
