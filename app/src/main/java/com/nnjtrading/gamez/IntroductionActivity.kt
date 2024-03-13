@@ -48,7 +48,6 @@ class IntroductionActivity : ComponentActivity() {
             }
         }
     }
-
 }
 
 fun getUserName(context: Context): String? {
@@ -91,7 +90,6 @@ fun ProvideIntent(intent: Intent?, content: @Composable () -> Unit) {
         content()
     }
 }
-
 
 @Preview(showBackground = true, showSystemUi = true)
 @Composable
@@ -241,15 +239,22 @@ fun IntroductionLayout() {
 
                             } else if(Type.equals("Guess Hints")) {
 
-
+                                Text(text = "Instructions to Play Game", color = Color.Black ,modifier = Modifier.padding(0.dp, 10.dp), fontWeight = FontWeight.Bold)
+                                Text(text = "1. A flag pointing to a country will be displayed along with a few blank spaces", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "2. Type a single character in the text box to guess a letter of the country's name.", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "3. Click \"Submit\" to check your guess - correct guesses will replace corresponding dashes.", color = Color.Gray , modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
 
                             } else if(Type.equals("Guess The Flag")) {
-
-
+                                Text(text = "Instructions to Play Game", color = Color.Black ,modifier = Modifier.padding(0.dp, 10.dp), fontWeight = FontWeight.Bold)
+                                Text(text = "1. A Country Name along with three random flag images will be displayed", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "2. You have to select the correct flag that points to the displayed name", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "3. Click \"Submit\" to check your guess", color = Color.Gray , modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
 
                             } else {
-
-
+                                Text(text = "Instructions to Play Game", color = Color.Black ,modifier = Modifier.padding(0.dp, 10.dp), fontWeight = FontWeight.Bold)
+                                Text(text = "1. A Country Name along with three random flag images will be displayed", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "2. You have to select the correct flag that points to the displayed name", color = Color.Gray ,modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
+                                Text(text = "3. Click \"Submit\" to check your guess", color = Color.Gray , modifier = Modifier.fillMaxWidth().padding(0.dp, 5.dp), textAlign = TextAlign.Left);
 
                             }
 
